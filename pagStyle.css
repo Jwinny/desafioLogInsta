@@ -29,3 +29,92 @@ body{
     width: 60%;
     height: 100vh;
 }
+.conteudo{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+.grupo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgrey;
+}
+.grupo:nth-child(1){
+    min-height: 19rem;
+}
+.logo img{
+    height: 3rem;
+}
+.foto img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+    height: 6rem;
+}
+
+.grupo a{
+    margin-top: 1rem;
+    color: #0095f6;
+}
+#login{
+    background-color: #0095f6;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+}
+#naoConta{
+    color: rgb(160,160,160);
+}
+footer{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.3rem 0;
+}
+.download{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+.botao{
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+.botao:nth-child(1){
+    background-image: url(img/apple-button.png);
+}
+.botao:nth-child(2){
+    background-image: url(img/googleplay-button.png);
+}
+
+@media (max-width: 1024px) {
+    .instragram-warp{
+        width: 90%;
+    }
+}
+@media (max-width: 650px){
+    .instragram-warp{
+        width: 90%;
+    }
+    .celular{
+        display: none;
+    }
+    .conteudo{
+        width: 100%;
+    }
+}
